@@ -1,0 +1,52 @@
+.main-container {
+    padding: 30px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 25px;
+}
+
+.product-sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: 250px;
+    align-items: center;
+    padding: 16px;
+    border: 1px rgb(244, 243, 243) solid;
+    border-radius: 10px;
+    background-color: rgb(250, 248, 248);
+}
+
+#product-image {
+    width: 150px;
+}
+
+#proImg {
+    width: 100%;
+}
+
+.sellerName {
+    color: lightslategrey;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: small;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    color: rgba(128, 128, 128, 0.2);
+    fill: #6469ff;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
